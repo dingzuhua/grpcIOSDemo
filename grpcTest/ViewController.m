@@ -24,6 +24,7 @@
 }
 
 - (IBAction)sendAction:(id)sender {
+    //服务器在https://github.com/dingzuhua/grpcDemo上面
     if(self.inputView.text.length<=0){
         self.showText.text = @"请输入要发送的内容(这不是服务器返回)";
         self.showText.textColor = [UIColor redColor];
