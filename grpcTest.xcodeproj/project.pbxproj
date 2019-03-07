@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92DCC2D8E01D9E45F5064425 /* libPods-grpcTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C6298821F2C2CAF03370D /* libPods-grpcTest.a */; };
+		EDBE25A02230D3680009EF18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE259F2230D3680009EF18 /* AppDelegate.m */; };
+		EDBE25A32230D3680009EF18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE25A22230D3680009EF18 /* ViewController.m */; };
+		EDBE25A62230D3680009EF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBE25A42230D3680009EF18 /* Main.storyboard */; };
+		EDBE25A82230D36A0009EF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBE25A72230D36A0009EF18 /* Assets.xcassets */; };
+		EDBE25AB2230D36A0009EF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBE25A92230D36A0009EF18 /* LaunchScreen.storyboard */; };
+		EDBE25AE2230D36A0009EF18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE25AD2230D36A0009EF18 /* main.m */; };
+		EDBE25B82230D36A0009EF18 /* grpcTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE25B72230D36A0009EF18 /* grpcTestTests.m */; };
+		EDBE25C32230D36A0009EF18 /* grpcTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE25C22230D36A0009EF18 /* grpcTestUITests.m */; };
+		EDBE2E812230EF1B0009EF18 /* ClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBE2E802230EF1B0009EF18 /* ClientManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDBE25B42230D36A0009EF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDBE25932230D3680009EF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDBE259A2230D3680009EF18;
+			remoteInfo = grpcTest;
+		};
+		EDBE25BF2230D36A0009EF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDBE25932230D3680009EF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDBE259A2230D3680009EF18;
+			remoteInfo = grpcTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86274A94A7C37DF9CD3387CF /* Pods-grpcTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpcTest.debug.xcconfig"; path = "Target Support Files/Pods-grpcTest/Pods-grpcTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BD1C6298821F2C2CAF03370D /* libPods-grpcTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-grpcTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBE259B2230D3680009EF18 /* grpcTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grpcTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBE259E2230D3680009EF18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDBE259F2230D3680009EF18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDBE25A12230D3680009EF18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDBE25A22230D3680009EF18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDBE25A52230D3680009EF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDBE25A72230D36A0009EF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDBE25AA2230D36A0009EF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDBE25AC2230D36A0009EF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBE25AD2230D36A0009EF18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDBE25B32230D36A0009EF18 /* grpcTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grpcTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBE25B72230D36A0009EF18 /* grpcTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grpcTestTests.m; sourceTree = "<group>"; };
+		EDBE25B92230D36A0009EF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBE25BE2230D36A0009EF18 /* grpcTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grpcTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBE25C22230D36A0009EF18 /* grpcTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grpcTestUITests.m; sourceTree = "<group>"; };
+		EDBE25C42230D36A0009EF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDBE2E7F2230EF1B0009EF18 /* ClientManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientManager.h; sourceTree = "<group>"; };
+		EDBE2E802230EF1B0009EF18 /* ClientManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientManager.m; sourceTree = "<group>"; };
+		FB08066A0FC64FFA39B4D8E8 /* Pods-grpcTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grpcTest.release.xcconfig"; path = "Target Support Files/Pods-grpcTest/Pods-grpcTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDBE25982230D3680009EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DCC2D8E01D9E45F5064425 /* libPods-grpcTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25B02230D36A0009EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25BB2230D36A0009EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EA771DFA1A456063A7E5ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1C6298821F2C2CAF03370D /* libPods-grpcTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B5439D710DCA664FE010915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86274A94A7C37DF9CD3387CF /* Pods-grpcTest.debug.xcconfig */,
+				FB08066A0FC64FFA39B4D8E8 /* Pods-grpcTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDBE25922230D3680009EF18 = {
+			isa = PBXGroup;
+			children = (
+				EDBE259D2230D3680009EF18 /* grpcTest */,
+				EDBE25B62230D36A0009EF18 /* grpcTestTests */,
+				EDBE25C12230D36A0009EF18 /* grpcTestUITests */,
+				EDBE259C2230D3680009EF18 /* Products */,
+				9B5439D710DCA664FE010915 /* Pods */,
+				1EA771DFA1A456063A7E5ADE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDBE259C2230D3680009EF18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDBE259B2230D3680009EF18 /* grpcTest.app */,
+				EDBE25B32230D36A0009EF18 /* grpcTestTests.xctest */,
+				EDBE25BE2230D36A0009EF18 /* grpcTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDBE259D2230D3680009EF18 /* grpcTest */ = {
+			isa = PBXGroup;
+			children = (
+				EDBE259E2230D3680009EF18 /* AppDelegate.h */,
+				EDBE259F2230D3680009EF18 /* AppDelegate.m */,
+				EDBE25A12230D3680009EF18 /* ViewController.h */,
+				EDBE25A22230D3680009EF18 /* ViewController.m */,
+				EDBE25A42230D3680009EF18 /* Main.storyboard */,
+				EDBE25A72230D36A0009EF18 /* Assets.xcassets */,
+				EDBE25A92230D36A0009EF18 /* LaunchScreen.storyboard */,
+				EDBE25AC2230D36A0009EF18 /* Info.plist */,
+				EDBE25AD2230D36A0009EF18 /* main.m */,
+				EDBE2E7F2230EF1B0009EF18 /* ClientManager.h */,
+				EDBE2E802230EF1B0009EF18 /* ClientManager.m */,
+			);
+			path = grpcTest;
+			sourceTree = "<group>";
+		};
+		EDBE25B62230D36A0009EF18 /* grpcTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDBE25B72230D36A0009EF18 /* grpcTestTests.m */,
+				EDBE25B92230D36A0009EF18 /* Info.plist */,
+			);
+			path = grpcTestTests;
+			sourceTree = "<group>";
+		};
+		EDBE25C12230D36A0009EF18 /* grpcTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDBE25C22230D36A0009EF18 /* grpcTestUITests.m */,
+				EDBE25C42230D36A0009EF18 /* Info.plist */,
+			);
+			path = grpcTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDBE259A2230D3680009EF18 /* grpcTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBE25C72230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTest" */;
+			buildPhases = (
+				6AA4A0B6731524C2FD2A0C0E /* [CP] Check Pods Manifest.lock */,
+				EDBE25972230D3680009EF18 /* Sources */,
+				EDBE25982230D3680009EF18 /* Frameworks */,
+				EDBE25992230D3680009EF18 /* Resources */,
+				2262D2D048A4433550628D65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grpcTest;
+			productName = grpcTest;
+			productReference = EDBE259B2230D3680009EF18 /* grpcTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDBE25B22230D36A0009EF18 /* grpcTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBE25CA2230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTestTests" */;
+			buildPhases = (
+				EDBE25AF2230D36A0009EF18 /* Sources */,
+				EDBE25B02230D36A0009EF18 /* Frameworks */,
+				EDBE25B12230D36A0009EF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDBE25B52230D36A0009EF18 /* PBXTargetDependency */,
+			);
+			name = grpcTestTests;
+			productName = grpcTestTests;
+			productReference = EDBE25B32230D36A0009EF18 /* grpcTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDBE25BD2230D36A0009EF18 /* grpcTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDBE25CD2230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTestUITests" */;
+			buildPhases = (
+				EDBE25BA2230D36A0009EF18 /* Sources */,
+				EDBE25BB2230D36A0009EF18 /* Frameworks */,
+				EDBE25BC2230D36A0009EF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDBE25C02230D36A0009EF18 /* PBXTargetDependency */,
+			);
+			name = grpcTestUITests;
+			productName = grpcTestUITests;
+			productReference = EDBE25BE2230D36A0009EF18 /* grpcTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDBE25932230D3680009EF18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = izhaohu;
+				TargetAttributes = {
+					EDBE259A2230D3680009EF18 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					EDBE25B22230D36A0009EF18 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EDBE259A2230D3680009EF18;
+					};
+					EDBE25BD2230D36A0009EF18 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EDBE259A2230D3680009EF18;
+					};
+				};
+			};
+			buildConfigurationList = EDBE25962230D3680009EF18 /* Build configuration list for PBXProject "grpcTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDBE25922230D3680009EF18;
+			productRefGroup = EDBE259C2230D3680009EF18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDBE259A2230D3680009EF18 /* grpcTest */,
+				EDBE25B22230D36A0009EF18 /* grpcTestTests */,
+				EDBE25BD2230D36A0009EF18 /* grpcTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDBE25992230D3680009EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBE25AB2230D36A0009EF18 /* LaunchScreen.storyboard in Resources */,
+				EDBE25A82230D36A0009EF18 /* Assets.xcassets in Resources */,
+				EDBE25A62230D3680009EF18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25B12230D36A0009EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25BC2230D36A0009EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2262D2D048A4433550628D65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grpcTest/Pods-grpcTest-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grpcTest/Pods-grpcTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA4A0B6731524C2FD2A0C0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grpcTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDBE25972230D3680009EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBE25A32230D3680009EF18 /* ViewController.m in Sources */,
+				EDBE2E812230EF1B0009EF18 /* ClientManager.m in Sources */,
+				EDBE25AE2230D36A0009EF18 /* main.m in Sources */,
+				EDBE25A02230D3680009EF18 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25AF2230D36A0009EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBE25B82230D36A0009EF18 /* grpcTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBE25BA2230D36A0009EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDBE25C32230D36A0009EF18 /* grpcTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDBE25B52230D36A0009EF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDBE259A2230D3680009EF18 /* grpcTest */;
+			targetProxy = EDBE25B42230D36A0009EF18 /* PBXContainerItemProxy */;
+		};
+		EDBE25C02230D36A0009EF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDBE259A2230D3680009EF18 /* grpcTest */;
+			targetProxy = EDBE25BF2230D36A0009EF18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDBE25A42230D3680009EF18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDBE25A52230D3680009EF18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDBE25A92230D36A0009EF18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDBE25AA2230D36A0009EF18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDBE25C52230D36A0009EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDBE25C62230D36A0009EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDBE25C82230D36A0009EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86274A94A7C37DF9CD3387CF /* Pods-grpcTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "grpcTest/grpcTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDBE25C92230D36A0009EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB08066A0FC64FFA39B4D8E8 /* Pods-grpcTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "grpcTest/grpcTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDBE25CB2230D36A0009EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grpcTest.app/grpcTest";
+			};
+			name = Debug;
+		};
+		EDBE25CC2230D36A0009EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grpcTest.app/grpcTest";
+			};
+			name = Release;
+		};
+		EDBE25CE2230D36A0009EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grpcTest;
+			};
+			name = Debug;
+		};
+		EDBE25CF2230D36A0009EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y87V57J9GQ;
+				INFOPLIST_FILE = grpcTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhaohu.ihome.grpcTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = grpcTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDBE25962230D3680009EF18 /* Build configuration list for PBXProject "grpcTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBE25C52230D36A0009EF18 /* Debug */,
+				EDBE25C62230D36A0009EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBE25C72230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBE25C82230D36A0009EF18 /* Debug */,
+				EDBE25C92230D36A0009EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBE25CA2230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBE25CB2230D36A0009EF18 /* Debug */,
+				EDBE25CC2230D36A0009EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDBE25CD2230D36A0009EF18 /* Build configuration list for PBXNativeTarget "grpcTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDBE25CE2230D36A0009EF18 /* Debug */,
+				EDBE25CF2230D36A0009EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDBE25932230D3680009EF18 /* Project object */;
+}
